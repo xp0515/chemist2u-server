@@ -9,5 +9,6 @@ export enum ServerEvent {
     STARTTIMER = 'startTimer',
     STOPTIMER = 'stopTimer,',
     REMOVETIMER = 'removeTimer',
-    SERVEREVENT = 'serverEvent'
+    SERVEREVENT = 'serverEvent',
+    SERVERREMOVETIMER = 'serverRemoveTimer'
 }

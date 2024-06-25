@@ -43,6 +43,7 @@ io.on("connection", (socket) => {
     socket.on(ServerEvent.REMOVETIMER, (data: TimerPayload) => {
         clearInterval(timers.get(data.id));
         timers.delete(data.id);
+        io.emit(ServerEvent.SERVERREMOVETIMER, { id: data.id });
     })
 });
 
